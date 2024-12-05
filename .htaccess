@@ -1,0 +1,12 @@
+
+RewriteOptions inherit
+# Ensure .htaccess is being read
+Options -MultiViews
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect to index.html if the requested resource is not found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

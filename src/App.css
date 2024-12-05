@@ -1,0 +1,11 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures the content takes up the full viewport height */
+    flex-direction: column;
+  }
+  
+  #formFooter, .jfPoweredBy, .jfFooter-new {
+    display: none !important;
+}
